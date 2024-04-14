@@ -1,2 +1,3 @@
-# Ursina-Game-test
-Ursina Game test
+# Ursina-Game| Status: Non functional
+Ursina Game first game
+First game using Ursina
