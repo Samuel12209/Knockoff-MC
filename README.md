@@ -1,4 +1,4 @@
-# Knockoff - mc| Status: Non functional
+# Knockoff - mc| Status: Functional
 Ursina Game first game
 First game using Ursina
 # setup 
