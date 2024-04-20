@@ -12,10 +12,11 @@ class Voxel(Button):
             position=position,
             model='cube',
             origin_y=.5,
-            texture='white_cube',
+            texture='grass.png',
             color=color.hsv(0, 0, random.uniform(.9, 1.0)),
             highlight_color=color.lime,
         )
+
 for i in range(1):
   angle = i
   x = 20 * math.cos(math.radians(angle))
@@ -24,6 +25,7 @@ for x in range(50):
     for y in range(1):
         for z in range(50):
             voxel = Voxel(position=(x, y, z))
+
 
 for angle in range(1):
     x = 100 * math.cos(math.radians(angle)) 
