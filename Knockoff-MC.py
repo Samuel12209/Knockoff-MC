@@ -29,6 +29,10 @@ for z in range(8):
         voxel = Voxel(position=(x,0,z))
         voxels.append(voxel)
 
+def hills(start_x, start_z, height, radius):
+    print("Hills")
+
+
 tree_num = random.randrange(1, 2)
 for i in range(50):
     if tree_num == 1:
@@ -67,8 +71,6 @@ for i in range(50):
         voxel = Leaf(position=(tree_x - 1, 5, tree_z))
         voxel = Leaf(position=(tree_x, 5, tree_z + 1))
         voxel = Leaf(position=(tree_x, 5, tree_z - 1))
-           
-
 
 def input(key):
     if key == 'right mouse down':
@@ -77,8 +79,11 @@ def input(key):
             voxel = Voxel(position=hit_info.entity.position + hit_info.normal)
             voxels.append(voxel)
             
-    if key == 'left mouse down' and mouse.hovered_entity:
-        destroy(mouse.hovered_entity, delay=current_delay)
+    if key == 'left mouse down' and mouse.hovered_entity and distance(player.position, mouse.hovered_entity.position) < 5:
+        destroy(mouse.hovered_entity)
 
 player = FirstPersonController()
+player_xr = random.randint(0, 49)
+player_zr = random.randint(0, 49)
+player.position =  (player_xr, 100, player_zr)
 app.run()
