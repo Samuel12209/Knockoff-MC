@@ -1,7 +1,8 @@
 # Knockoff - mc| Status: Functional
-Ursina Game first game
-First game using Ursina
+Game made using ursina game engine
 # setup 
-Currently only requirement is to run the script with the required packages
+Currently only requirement to run the script is
+to just download the package ```pip install ursina```
 # Description
-Attempt to re create minecraft
+Using the ursina package to make
+a minecraft basic recreation
